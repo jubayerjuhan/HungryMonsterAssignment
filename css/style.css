@@ -1,0 +1,108 @@
+*{
+    
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+#mealDetails{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+.meal{
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    background-color: #5E19E6;
+}
+#mealDetails img{
+    width: 100%;
+    border-radius: 10px;
+}
+.mealTitle{
+    background-color: #5E19E6;
+    padding-top: 10px;
+}
+.mealTitle:hover{
+    cursor: pointer;
+    color: white;
+}
+/* single show info */
+.singleMealInfo{
+    background-color: darkgray;
+    padding: 40px;
+}
+.singleMealInfo img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+.thumbnail{
+    display: grid;
+    grid-template-columns: 400px 600px;
+    grid-gap: 30px;
+    margin-bottom: 20px;
+}
+.ingredients{
+    padding-left: 30px;
+    list-style-type: circle;
+}
+/* nav bar */
+nav{
+    height: 50px;
+    width: 100%;
+    padding: 20px 0;
+}
+.container{
+    width: 1200px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 6px;
+}
+nav ul li{
+    list-style-type: none;
+    margin-right: 5px;
+}
+nav ul li a{
+    color: black;
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #3352F2;
+    border-radius: 5px;
+}
+@media(max-width:625px){
+    .thumbnail{
+        display: block;
+    }
+    .thumbnail img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #mealDetails{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem;
+        align-items: center;
+
+    }
+    .meal{
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+        background-color: #5E19E6;
+
+    }
+}
